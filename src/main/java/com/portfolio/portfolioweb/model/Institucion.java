@@ -10,8 +10,8 @@ import lombok.Setter;
 @Entity
 @Table(name="Institucion")
 public class Institucion {
-	@Id
-	private long id;
-	private String nombre;
-	private String ubicacion;
+    @Id
+    private long id;
+    private String nombre;
+    private String ubicacion;
 }

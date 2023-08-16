@@ -15,17 +15,17 @@ import com.portfolio.portfolioweb.service.InstitucionService;
 
 @RestController
 public class InstitucionController {
-	@Autowired
-	private InstitucionService interInstitucion;
+    @Autowired
+    private InstitucionService interInstitucion;
 	
-	@GetMapping("/instituciones/traer")
-	public List<Institucion>getInstituciones() {
+    @GetMapping("/instituciones/traer")
+    public List<Institucion>getInstituciones() {
         return interInstitucion.getInstituciones();
     }
     
     @PostMapping("/instituciones/crear")
-    public void crearInstitucion(@RequestBody Institucion p) {
-    	interInstitucion.saveInstitucion(p);
+    public void crearInstitucion(@RequestBody Institucion i) {
+    	interInstitucion.saveInstitucion(i);
     }
     
     @DeleteMapping("/instituciones/borrar/{id}") 

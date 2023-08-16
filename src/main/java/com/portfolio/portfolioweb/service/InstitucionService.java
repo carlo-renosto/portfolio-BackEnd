@@ -15,13 +15,13 @@ public class InstitucionService implements IInstitucionService {
 	    
 	 @Override
 	 public List<Institucion>getInstituciones() {
-		 List<Institucion> listaPersonas = oRepository.findAll();
-		 return listaPersonas;
+		 List<Institucion> listaInstituciones = oRepository.findAll();
+		 return listaInstituciones;
 	 }
 
 	 @Override
-	 public void saveInstitucion(Institucion p) {
-		 oRepository.save(p);
+	 public void saveInstitucion(Institucion i) {
+		 oRepository.save(i);
 	 }
 
 	 @Override
@@ -31,7 +31,7 @@ public class InstitucionService implements IInstitucionService {
 
 	 @Override
 	 public Institucion findInstitucion(Long id) {
-		 Institucion p = oRepository.findById(id).orElse(null);
-		 return p;
+		 Institucion i = oRepository.findById(id).orElse(null);
+		 return i;
 	 }
 }
