@@ -1,2 +1,2 @@
 # portfolio-BackEnd
-Repositorio para la parte back end del portfolio web.
+Proyecto web del portfolio personal correspondiente al backend. Escrito en Java y utilizando el framework Spring.
